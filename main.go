@@ -7,6 +7,6 @@ import (
 )
 
 func main() {
-	str := intermediate.Sheeps(4)
-	fmt.Println(str)
+	num := intermediate.RecursiveDigitsAdded(123)
+	fmt.Println(num)
 }
