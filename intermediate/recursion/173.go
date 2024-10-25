@@ -1,4 +1,4 @@
-package intermediate
+package recursion
 
 func DivideBy3Count(n int32) int32 {
 	if n == 0 {

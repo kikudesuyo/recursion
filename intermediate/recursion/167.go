@@ -1,4 +1,4 @@
-package intermediate
+package recursion
 
 func Pascal(x int32) int32 {
 	var pascalNum int32

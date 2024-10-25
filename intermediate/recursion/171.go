@@ -1,4 +1,4 @@
-package intermediate
+package recursion
 
 func gcd(x, y int32) int32 {
 	gcdX, gcdY := x, y

@@ -1,4 +1,4 @@
-package intermediate
+package recursion
 
 func ReverseString(s string) string {
 	reversedString := ""

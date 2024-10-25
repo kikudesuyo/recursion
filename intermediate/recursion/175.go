@@ -1,4 +1,4 @@
-package intermediate
+package recursion
 
 func HowLongToReachFundGoal(capitalMoney int32, goalMoney int32, interest int32) int32 {
 	if capitalMoney >= goalMoney {

@@ -1,4 +1,4 @@
-package intermediate
+package recursion
 
 func TotalSquareArea(x int32) int32 {
 	var totalArea int32

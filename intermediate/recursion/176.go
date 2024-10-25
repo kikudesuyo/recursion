@@ -1,4 +1,4 @@
-package intermediate
+package recursion
 
 func FibonacciTail(n int32) int32 { // 末尾再帰を実装
 	return fibonacciTailHelper(0, 1, n)
