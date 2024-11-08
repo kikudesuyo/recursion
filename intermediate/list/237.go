@@ -1,27 +1,19 @@
 package list
 
+import "strings"
+
 func isValidEmail(str string) bool {
-	runes := []rune(str)
-	if string(runes[0]) == "@" {
+	if strings.Contains(str, " ") {
 		return false
 	}
-	atMarKCnt := 0
-	isDot := false
-	for _, r := range runes {
-		if string(r) == " " {
-			return false
-		}
-		if string(r) == "@" {
-			atMarKCnt++
-		}
-		if atMarKCnt > 1 {
-			return false
-		}
-		if atMarKCnt == 1 && string(r) == "." {
-			isDot = true
-		}
+	if strings.Count(str, "@") != 1 {
+		return false
 	}
-	return isDot
+	atIndex := strings.Index(str, "@")
+	if atIndex == 0 {
+		return false
+	}
+	return strings.Index(str[atIndex:], ".") > 0
 }
 
 func ValidEmailList(emailList []string) []string {
