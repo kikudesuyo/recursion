@@ -1,9 +1,9 @@
 package list
 
 func MissingItems(listA []int32, listB []int32) []int32 {
-	m := map[int32]bool{}
+	m := map[int32]int32{}
 	for _, v := range listB {
-		m[v] = true
+		m[v] = v
 	}
 	arr := make([]int32, 0)
 	for _, v := range listA {
